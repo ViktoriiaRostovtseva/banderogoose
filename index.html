@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banderogus</title>
+
+    <link rel="preload" href="./img/gus-anim.gif" as="image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <section class="main-page">
+        
+
+        <div class="wrapper">
+
+            <div class="main-page-left-side">
+                <div id="language-switcher" >
+                    <label for="language-select">Choose Language:</label>
+                    <select id="language-select">
+                        <option value="ua">Ukrainian</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+
+                <div class="main-page-text-contanier">
+
+                    <h2 class="main-page-description" data-ua=" Доброго вечора, ми з України" data-en="Good evening, we are from Ukraine">Доброго вечора, ми з України</h2>
+                    <h1 class="main-page-title" data-ua="Бандерогусь" data-en="Banderogoose">Бандерогусь</h1>
+                    <p class="main-page-text" data-ua="Спеціальний бойовий гусак із біолабораторій України. Пишаюся своїми подвигами, бороню Батьківщину та підтримую позитивний дух народу. Слава Україні!" data-en="Special combat goose from Ukrainian biolaboratories. I am proud of my exploits, defend the Motherland and support the positive spirit of the people. Glory to Ukraine!">Спеціальний бойовий гусак із біолабораторій України. Пишаюся своїми подвигами, бороню Батьківщину та підтримую позитивний дух народу. Слава Україні!</p>
+
+        
+                    <button class="main-page-buttom" id="go-to-form-btn" data-ua="Запустити гуся" data-en="Launch the goose">Запустити гуся</button>
+                </div>
+
+            </div>
+            <img src="./img/gus-main-page.svg" alt="">
+
+        </div>  
+
+    </section>
+
+    <section class="gus-facts">
+        <img src="./img/tryzub.svg" alt="" class="tryzub">
+        <h1 class="gus-facts-title" data-ua="Цікаві факти про бандерогусей" data-en="Interesting facts about banderogoose">Цікаві факти про бандерогусей</h1>
+        <p class="gus-facts-text" data-ua="Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки можуть атакувати ворога системою надпотужного озброєння. Також нищать психологічно, активуючи високочастотне шипіння та розмахування крилами" data-en="Usually banderogoose are exclusively peaceful birds. But in case of danger, they can attack the enemy with a system of super powerful weapons. They also destroy psychologically, activating high-frequency hissing and flapping their wings">Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки можуть атакувати ворога системою надпотужного озброєння. Також нищать психологічно, активуючи високочастотне шипіння та розмахування крилами</p>
+        <div class="wrapper">
+            <div class="gus-fact-item">
+                <img src="./img/gus1.svg" alt="gus fact 1">
+                <h3 class="gus-fact-item-title" data-ua="Система навігації" data-en="Navigation system">Система навігації</h3>
+                <p class="gus-fact-item-descr" data-ua="Супутниковий GPS та ехолокатори розпізнають ворожу техніку навіть на етапі збірки" data-en="Satellite GPS and echolocators recognize enemy equipment even at the assembly stage">Супутниковий GPS та ехолокатори розпізнають ворожу техніку навіть на етапі збірки</p>
+            </div>
+            <div class="gus-fact-item">
+                <img src="./img/gus2.svg" alt="gus fact 2">
+                <h3 class="gus-fact-item-title" data-ua="Очі-тепловізори" data-en="Thermal imaging eyes">Очі-тепловізори</h3>
+                <p class="gus-fact-item-descr" data-ua="Допомагають виявити характер сигнатури об’єктів та значно підвищують точність удару" data-en="Helps to detect the signature of objects and significantly increase the accuracy of the strike">Допомагають виявити характер сигнатури об’єктів та значно підвищують точність удару</p>
+            </div>
+            <div class="gus-fact-item">
+                <img src="./img/gus3.svg" alt="gus fact 3">
+                <h3 class="gus-fact-item-title" data-ua="Байракрила" data-en="Wing missiles">Байракрила</h3>
+                <p class="gus-fact-item-descr" data-ua="Можуть нести 2-4 керовані ракети, що вражають ціль на відстані «ніхріна собі» кілометрів" data-en="Can carry 2-4 guided missiles that hit the target at a distance of «no way» kilometers">Можуть нести 2-4 керовані ракети, що вражають ціль на відстані «ніхріна собі» кілометрів</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <form action="#" class="form-container" id="form" data-netlify="true">
+            <img src="./img/tryzub.svg" alt="">
+            <h3 class="form-title" data-ua="Поділися, будь ласка, поштою" data-en="Please share your email">Поділися, будь ласка, поштою</h3>
+            <p class="form-descr" data-ua="та запиши гуся до бандерозагону" data-en="and sign up the goose for the banderopen">та запиши гуся до бандерозагону</p>
+
+            <div class="form-field">
+                <label for="user-name" class="form-field-label" data-ua="Ім'я" data-en="Name">Ім'я</label>
+                <input type="text" class="form-field-input" name="Ім'я" id="user-name" required>
+            </div>
+
+            <div class="form-field">
+                <label for="user-email" class="form-field-label">email</label>
+                <input type="email" class="form-field-input" name="Email" id="user-email" required>
+            </div>
+
+            <button class="form-btn" id="launch-btn" data-ua="Запустити гуся" data-en="Launch the goose">Запустити гуся</button>
+        </form>
+    </section>
+
+    <script src="./js/form.js"></script>
+</body>
+</html>
